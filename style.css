@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+}
+.header{
+    height: 400px;
+}
+.header .wavy{
+    height: 3500px;
+    width: 3450px;
+    border-radius: 45%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(230, 30, 203, 0.699);
+    animation: wave 15s infinite linear;
+    z-index: -1;
+}
+@keyframes wave{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.header .wavy2{
+    height: 3500px;
+    width: 3450px;
+    border-radius: 45%;
+    position: absolute;
+    left: -125px;
+    top: 160px;
+    background: #401C66;
+    animation: wave2 15s infinite linear;
+    z-index: -1;
+}
+@keyframes wave2{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: #401C66;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.item img{
+    animation: spin 7s infinite linear;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.img img{
+    height: 70px;
+    width: 70px;
+    margin-left: 1100px;
+    margin-top: 360px;
+    animation: star 7s infinite linear;
+}
+@keyframes star{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
